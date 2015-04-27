@@ -1,0 +1,10 @@
+Each exam consist 5 problems [different programs] that should be resolved in 6 hours. 
+The exam is running at Telerik Academy Building on our [open judge system] BgCoder.com /open source/ 
+that executes the code and compare the result with already existing answer which is not shown to the 
+participants except the first 1-3 test answer/results. Each correct answer of the program is 1 or 10 points. 
+Each main folder [i.e. folder where this file is] is named exactly as the competition name in bgCoder 
+so if you want more info about some task or just want to check my solutions you can [copy/ paste]
+the "Main folder - name" [e.g. CSharp-Fundamentals-2011-2012-Part-1-Test-Exam ] in google and the first result 
+must lead you to this particular contest. Maximum result of a task is 100 points. 
+NOTE: This folder consists all official and all practiced exams by me in [bgCoder.com]
+Each solution is written by me and it is extracted from the bgcoder submission logs from my account.
