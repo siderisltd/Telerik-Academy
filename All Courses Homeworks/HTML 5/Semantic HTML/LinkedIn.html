@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>LinkedIn</title>
+    <style>
+        .loginInput {
+            position:relative;
+            left: 45px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href=""><h1>LinkedIn</h1></a>
+    </header>
+    <nav>
+        <ul type="disc">
+            <li><a href="">Home</a></li>
+            <li><a href="">What is LinkedIn</a></li>
+            <li><a href="">Join Today</a></li>
+            <ul type="circle">
+                <form method="get" action="" class="login">
+                    <li><label>Email <input type="text" name="email" placeholder="someone@somehost.com" size="22" /></label></li>
+                    <li><label>Password <input type="password" name="pass" placeholder="password" size="22" /></label></li>
+                    <li><input type="submit" alt="submit" /></li>
+                </form>
+            </ul>
+        </ul>
+    </nav>
+    <hr />
+    <section>
+        <article id="site-information">
+            <h2>Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities</h2>
+            <ul type="disc">
+                <li>Stay informed about your contacts and industry</li>
+                <li>Find the people & knowledge you need to achieve your goals</li>
+                <li>Control your professional identity online</li>
+            </ul>
+        </article>
+
+        <article id="user-login">
+            <h2>Join LinkedIn Today</h2>
+            <p>Sign up</p>
+            <form method="post" action="http://www.google.com" name="user-submission">
+                <ul type="disc"><li>First Name</li></ul>
+                <input type="text" class="loginInput" name="firstName" size="10" />
+                
+                <ul type="disc"><li>Last Name</li></ul>
+                <input type="text" class="loginInput" name="lastName" size="10" />
+
+                <ul type="disc"><li>Email</li></ul>
+                <input type="email" class="loginInput" name="email" size="10" />
+
+                <ul type="disc"><li>Password</li></ul>
+                <input type="password" class="loginInput" name="password" size="10" />
+
+                <p>6 or more characters</p>
+
+                <input type="submit" value="Join Now" />
+            </form>
+        </article>
+    </section>
+    <section class="search">
+        <h5>Search for someone by name:</h5>
+        <form method="get" action="">
+            <ul type="disc">
+                <li> First Name <input type="text" class="search-users" name="search-first-name" size="10" /></li>
+                <li> Last Name <input type="text" class="search-users" name="search-last-name" size="10" /></li>
+            </ul>
+            <input type="submit" value="Go" name="Go" />
+        </form>
+    </section>
+</body>
+</html>

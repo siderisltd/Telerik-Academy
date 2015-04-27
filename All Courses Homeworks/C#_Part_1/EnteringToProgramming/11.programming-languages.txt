@@ -1,0 +1,14 @@
+Languages TIOBE Rank  JobsTractor Rank 	 Vacancies at 
+
+C 	      1 	   13 	           8112
+C++ 	      4            10 	          31199
+Java 	      2 	    1 	          67753
+C# 	      6 	    8 	          31935
+Objective-C   3             3 	           4473
+PHP 	      5 	    2 	          19953
+Python 	      8 	    9 	          24916
+Ruby 	     11 	    5 	          13621
+
+
+
+https://www.udemy.com/blog/best-programming-language/

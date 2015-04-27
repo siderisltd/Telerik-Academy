@@ -1,0 +1,31 @@
+
+        h1 {
+            position : absolute;
+            top : 5%;
+            right : 35%;
+            left : 35%;
+        }
+
+        img.logo {
+            position : absolute;
+            top : 5%;
+            left : 5%;
+            width : 12%;
+            height :12%;
+        }
+
+        .navigation {
+            position : absolute;
+            top : 19%;
+            left : 6%;
+        }
+
+        .table {
+            position : absolute;
+            top : 40%;
+            left : 5%;
+        }
+
+        .table, td, th, tr {
+            text-align : center;
+        }

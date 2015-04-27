@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Form</title>
+    <style>
+        #table {
+            border-collapse: collapse;
+        }
+
+        .info {
+            width: 150px;
+        }
+
+        .userInfo {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section id="user-filling-form">
+        <form method="post" action="http://www.google.bg">
+            <table border="1" id="table">
+                <tbody>
+                    <tr>
+                        <td class="info"><center><strong>Last Name *</strong></center></td>
+                        <td class="userInfo">
+                            <input type="text" size="35" name="last-name" pattern="^[a-zA-Z]+$" placeholder="Last Name"
+                                   required="required" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info"><center><strong>First Name *</strong></center></td>
+                        <td class="userInfo">
+                            <input type="text" size="35" name="first-name" pattern="^[a-zA-Z]+$" placeholder="First Name"
+                                   required="required" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Address</strong></center></td>
+                        <td class="userInfo">
+                            <textarea name="address-multi-line" rows="5" cols="35" placeholder="Address"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>City</strong></center></td>
+                        <td class="userInfo">
+                            <input type="text" name="city" size="23" pattern="^[a-zA-Z]+$" placeholder="City" /> State
+                            <input type="text" name="state" size="4" maxlength="2" pattern="^[a-zA-Z]+$" placeholder="State" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Zip/Postal Code</strong></center></td>
+                        <td class="userInfo">
+                            <input type="text" name="zip-code" size="5" pattern="^[1-9]+$"
+                                   placeholder="Zip" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Country</strong></center></td>
+                        <td class="userInfo">
+                            <select name="countySelect" style="width:200px;">
+                                <option value="Bulgaria" selected="selected">Bulgaria</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Somalia">Somalia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info"><center><strong>Phone(country code, area code, number)</strong></center></td>
+                        <td class="userInfo">
+                            (+<input type="text" name="firstDigits" size="4" pattern="^[1-9]+$" maxlength="3" value="359" />)
+                            <input type="text" name="secondDigits" size="3" pattern="^[1-9]+$" maxlength="3" />
+                            <input type="text" name="lastDigits" size="6" pattern="^[1-9]+$" maxlength="6" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Email</strong></center></td>
+                        <td class="userInfo">
+                            <input type="email" name="email" size="23" pattern="^[A-Za-z0-9._%]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$"
+                                   placeholder="some@somehost.com" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Birth Date</strong></center></td>
+                        <td class="userInfo">
+                            <input type="text" name="birth-date" size="20"
+                                   pattern="^[1-9.]+$" placeholder="dd.mm.yyyy" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Gender</strong></center></td>
+                        <td class="userInfo">
+                            <select name="genderSelect" style="width:75px;">
+                                <option value="Male" selected="selected">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Starting date</strong></center></td>
+                        <td class="userInfo">
+                            <label>
+                                <input type="radio" name="starting-date" />Spring 2015
+                            </label><label><input type="radio" name="starting-date" />Summer 2015</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="info"><center><strong>Comments/Questions</strong></center></td>
+                        <td class="userInfo">
+                            <textarea name="comments-multi-line" rows="6" cols="35" placeholder="Comments/Questions"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="buttons" colspan="2" style="background-color: deepskyblue">
+                            <center>
+                                <input type="submit" value="Submit Form" />
+                                <input type="reset" value="Reset Form" />
+                            </center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
+</body>
+</html>
