@@ -1,0 +1,90 @@
+﻿body {
+    font-family: 'Times New Roman';
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #fdd617;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+h1, p {
+    margin-top: 0px;
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+}
+
+p {
+    color: #959595;
+    margin-right: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#lower-margin-paragraph {
+    margin-right: 51px;
+    display: inline-block;
+}
+
+.content {
+    position: relative;
+    left: 20px;
+    width: 662px;
+    height: 233px;
+    background-color: #3b3b3b;
+    border: hidden;
+    border-radius: 0px 0px 8px 8px;
+}
+
+#white, #members-login {
+    color: white;
+}
+
+#members-login {
+    position: relative;
+    top: -6px;
+    left: 6px;
+    font-size: 1.7em;
+}
+
+.login {
+    position: relative;
+    top: 25px;
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    li:not(#members-login) {
+        margin-top: 0px;
+    }
+
+input[type] {
+    width: 150px;
+}
+
+header {
+    position: relative;
+    left: 20px;
+    width: 662px;
+    height: 68px;
+    border: hidden;
+    border-radius: 8px 8px 0px 0px;
+    background: url("../Images/logo.png") no-repeat,url("../Images/go-button.png") no-repeat right,-moz-linear-gradient(top, #806850 0%, #363636 0%, #333333 1%, #353535 2%, #353535 4%, #2c2c2c 8%, #2b2b2b 16%, #272727 18%, #292929 18%, #262626 20%, #282828 21%, #262626 22%, #282828 23%, #282828 26%, #262626 26%, #282828 33%, #252525 33%, #272727 54%, #242424 55%, #262626 55%, #262626 63%, #282828 63%, #282828 68%, #262626 69%, #292929 70%, #272727 71%, #282828 74%, #262626 75%, #282828 77%, #252525 77%, #252525 82%, #282828 83%, #272727 84%, #292929 85%, #2a2a2a 87%, #2d2d2d 88%, #2d2d2d 89%, #323232 92%, #313131 92%, #343434 93%, #323232 94%, #343434 94%, #333333 96%, #3f3f3f 100%); /* FF3.6+ */
+    background: url("../Images/logo.png") no-repeat,url("../Images/go-button.png") no-repeat right,-webkit-gradient(linear, left top, left bottom, color-stop(0%,#806850), color-stop(0%,#363636), color-stop(1%,#333333), color-stop(2%,#353535), color-stop(4%,#353535), color-stop(8%,#2c2c2c), color-stop(16%,#2b2b2b), color-stop(18%,#272727), color-stop(18%,#292929), color-stop(20%,#262626), color-stop(21%,#282828), color-stop(22%,#262626), color-stop(23%,#282828), color-stop(26%,#282828), color-stop(26%,#262626), color-stop(33%,#282828), color-stop(33%,#252525), color-stop(54%,#272727), color-stop(55%,#242424), color-stop(55%,#262626), color-stop(63%,#262626), color-stop(63%,#282828), color-stop(68%,#282828), color-stop(69%,#262626), color-stop(70%,#292929), color-stop(71%,#272727), color-stop(74%,#282828), color-stop(75%,#262626), color-stop(77%,#282828), color-stop(77%,#252525), color-stop(82%,#252525), color-stop(83%,#282828), color-stop(84%,#272727), color-stop(85%,#292929), color-stop(87%,#2a2a2a), color-stop(88%,#2d2d2d), color-stop(89%,#2d2d2d), color-stop(92%,#323232), color-stop(92%,#313131), color-stop(93%,#343434), color-stop(94%,#323232), color-stop(94%,#343434), color-stop(96%,#333333), color-stop(100%,#3f3f3f)); /* Chrome,Safari4+ */
+    background: url("../Images/logo.png") no-repeat,url("../Images/go-button.png") no-repeat right,-webkit-linear-gradient(top, #806850 0%,#363636 0%,#333333 1%,#353535 2%,#353535 4%,#2c2c2c 8%,#2b2b2b 16%,#272727 18%,#292929 18%,#262626 20%,#282828 21%,#262626 22%,#282828 23%,#282828 26%,#262626 26%,#282828 33%,#252525 33%,#272727 54%,#242424 55%,#262626 55%,#262626 63%,#282828 63%,#282828 68%,#262626 69%,#292929 70%,#272727 71%,#282828 74%,#262626 75%,#282828 77%,#252525 77%,#252525 82%,#282828 83%,#272727 84%,#292929 85%,#2a2a2a 87%,#2d2d2d 88%,#2d2d2d 89%,#323232 92%,#313131 92%,#343434 93%,#323232 94%,#343434 94%,#333333 96%,#3f3f3f 100%); /* Chrome10+,Safari5.1+ */
+    background: url("../Images/logo.png") no-repeat,url("../Images/go-button.png") no-repeat right,-o-linear-gradient(top, #806850 0%,#363636 0%,#333333 1%,#353535 2%,#353535 4%,#2c2c2c 8%,#2b2b2b 16%,#272727 18%,#292929 18%,#262626 20%,#282828 21%,#262626 22%,#282828 23%,#282828 26%,#262626 26%,#282828 33%,#252525 33%,#272727 54%,#242424 55%,#262626 55%,#262626 63%,#282828 63%,#282828 68%,#262626 69%,#292929 70%,#272727 71%,#282828 74%,#262626 75%,#282828 77%,#252525 77%,#252525 82%,#282828 83%,#272727 84%,#292929 85%,#2a2a2a 87%,#2d2d2d 88%,#2d2d2d 89%,#323232 92%,#313131 92%,#343434 93%,#323232 94%,#343434 94%,#333333 96%,#3f3f3f 100%); /* Opera 11.10+ */
+    background: url("../Images/logo.png") no-repeat,url("../Images/go-button.png") no-repeat right,-ms-linear-gradient(top, #806850 0%,#363636 0%,#333333 1%,#353535 2%,#353535 4%,#2c2c2c 8%,#2b2b2b 16%,#272727 18%,#292929 18%,#262626 20%,#282828 21%,#262626 22%,#282828 23%,#282828 26%,#262626 26%,#282828 33%,#252525 33%,#272727 54%,#242424 55%,#262626 55%,#262626 63%,#282828 63%,#282828 68%,#262626 69%,#292929 70%,#272727 71%,#282828 74%,#262626 75%,#282828 77%,#252525 77%,#252525 82%,#282828 83%,#272727 84%,#292929 85%,#2a2a2a 87%,#2d2d2d 88%,#2d2d2d 89%,#323232 92%,#313131 92%,#343434 93%,#323232 94%,#343434 94%,#333333 96%,#3f3f3f 100%); /* IE10+ */
+    background: url("../Images/logo.png") no-repeat,url("../Images/go-button.png") no-repeat right,linear-gradient(to bottom, #806850 0%,#363636 0%,#333333 1%,#353535 2%,#353535 4%,#2c2c2c 8%,#2b2b2b 16%,#272727 18%,#292929 18%,#262626 20%,#282828 21%,#262626 22%,#282828 23%,#282828 26%,#262626 26%,#282828 33%,#252525 33%,#272727 54%,#242424 55%,#262626 55%,#262626 63%,#282828 63%,#282828 68%,#262626 69%,#292929 70%,#272727 71%,#282828 74%,#262626 75%,#282828 77%,#252525 77%,#252525 82%,#282828 83%,#272727 84%,#292929 85%,#2a2a2a 87%,#2d2d2d 88%,#2d2d2d 89%,#323232 92%,#313131 92%,#343434 93%,#323232 94%,#343434 94%,#333333 96%,#3f3f3f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#806850', endColorstr='#3f3f3f',GradientType=0 ); /* IE6-9 */
+    background-position: left 10px top 10px, left 580px top 20px, left 0px top 0px;
+}

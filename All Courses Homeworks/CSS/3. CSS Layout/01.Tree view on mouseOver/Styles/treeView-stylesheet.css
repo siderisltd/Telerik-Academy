@@ -1,0 +1,23 @@
+﻿li {
+    list-style-type: none;
+    margin: 0px;
+    display: table;
+}
+
+.main-menu > li:first-of-type {
+    text-decoration: underline;
+}
+
+ul ul {
+    display: none;
+}
+
+ul li:hover + ul {
+    display: table;
+    color: grey;
+}
+
+.sublist-items:hover {
+    display: table;
+    color: grey;
+}

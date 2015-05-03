@@ -1,0 +1,348 @@
+﻿body {
+    font-size: 10px;
+    font-family: Consolas;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.outline-wrapper {
+    position: relative;
+    top: 1em;
+    left: 1em;
+    width: 418px;
+    height: 402px;
+    border: 1px solid #c3c3c3;
+    display: inline-block;
+    border-radius: 0.7em;
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #b3dced 0%, #b3dced 2%, #b3dced 2%, #29b8e5 13%, #91d1ea 29%, #9fd5ea 34%, #9fd5ea 34%, #9dd4ea 39%, #29b8e5 52%, #29b8e5 53%, #29b8e5 53%, #29b8e5 55%, #29b8e5 55%, #29b8e5 67%, #72c8e0 67%, #4bbedd 73%, #60c5ea 78%, #84d1ed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#b3dced), color-stop(2%,#b3dced), color-stop(2%,#b3dced), color-stop(13%,#29b8e5), color-stop(29%,#91d1ea), color-stop(34%,#9fd5ea), color-stop(34%,#9fd5ea), color-stop(39%,#9dd4ea), color-stop(52%,#29b8e5), color-stop(53%,#29b8e5), color-stop(53%,#29b8e5), color-stop(55%,#29b8e5), color-stop(55%,#29b8e5), color-stop(67%,#29b8e5), color-stop(67%,#72c8e0), color-stop(73%,#4bbedd), color-stop(78%,#60c5ea), color-stop(100%,#84d1ed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #b3dced 0%,#b3dced 2%,#b3dced 2%,#29b8e5 13%,#91d1ea 29%,#9fd5ea 34%,#9fd5ea 34%,#9dd4ea 39%,#29b8e5 52%,#29b8e5 53%,#29b8e5 53%,#29b8e5 55%,#29b8e5 55%,#29b8e5 67%,#72c8e0 67%,#4bbedd 73%,#60c5ea 78%,#84d1ed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #b3dced 0%,#b3dced 2%,#b3dced 2%,#29b8e5 13%,#91d1ea 29%,#9fd5ea 34%,#9fd5ea 34%,#9dd4ea 39%,#29b8e5 52%,#29b8e5 53%,#29b8e5 53%,#29b8e5 55%,#29b8e5 55%,#29b8e5 67%,#72c8e0 67%,#4bbedd 73%,#60c5ea 78%,#84d1ed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #b3dced 0%,#b3dced 2%,#b3dced 2%,#29b8e5 13%,#91d1ea 29%,#9fd5ea 34%,#9fd5ea 34%,#9dd4ea 39%,#29b8e5 52%,#29b8e5 53%,#29b8e5 53%,#29b8e5 55%,#29b8e5 55%,#29b8e5 67%,#72c8e0 67%,#4bbedd 73%,#60c5ea 78%,#84d1ed 100%); /* IE10+ */
+    background: linear-gradient(135deg, #b3dced 0%,#b3dced 2%,#b3dced 2%,#29b8e5 13%,#91d1ea 29%,#9fd5ea 34%,#9fd5ea 34%,#9dd4ea 39%,#29b8e5 52%,#29b8e5 53%,#29b8e5 53%,#29b8e5 55%,#29b8e5 55%,#29b8e5 67%,#72c8e0 67%,#4bbedd 73%,#60c5ea 78%,#84d1ed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#84d1ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+.pad-wrapper {
+    position: absolute;
+    top: 4.25em;
+    left: 2em;
+    width: 400px;
+    height: 359px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.2em;
+    background-color: #d9e4f1;
+}
+
+.toolbar-box {
+    position: absolute;
+    top: 4.2em;
+    left: 2em;
+    width: 400px;
+    height: 20px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.1em;
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.toolbar a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -0.1em;
+}
+
+.toolbar {
+    list-style-type: none;
+    float: left;
+    font-size: 1.3em;
+    margin: 0.6em;
+    position: relative;
+    top: -1.1em;
+    left: -3em;
+}
+
+    .toolbar::first-letter {
+        text-decoration: underline;
+    }
+
+
+
+.default-top-bar {
+    position: absolute;
+    display: block;
+    font-size: 1.75em;
+    z-index: 10;
+    top: 1em;
+    left: 2.5em;
+    color: black;
+}
+
+#program-name {
+    font-size: 0.8em;
+    position: absolute;
+    top: 0em;
+    left: 0.2em;
+}
+
+.default-top-bar::before {
+    display: inline-block;
+    width: 1.7em;
+    height: 1.7em;
+    margin-right: 5px;
+    content: "";
+    background: url("../Images/calculator.jpg") no-repeat 0 0;
+    background-size: 50%;
+    position: absolute;
+    left: -1.3em;
+    top: -0.1em;
+}
+
+.default-top-bar::after {
+    display: inline-block;
+    width: 12.3em;
+    height: 12.3em;
+    margin-right: 5px;
+    content: "";
+    background: url("../Images/remoteButtons.jpg") no-repeat 0 0;
+    background-size: 50%;
+    position: absolute;
+    left: 15.5em;
+    top: -0.5em;
+}
+
+.calculations-box {
+    position: absolute;
+    top: 7em;
+    left: 2.6em;
+    width: 38.5em;
+    height: 5em;
+    border: 1px solid #c3c3cf;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.4em;
+    background: #e8f6ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #e8f6ff 0%, #f4fbff 48%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8f6ff), color-stop(48%,#f4fbff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e8f6ff 0%,#f4fbff 48%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e8f6ff 0%,#f4fbff 48%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e8f6ff 0%,#f4fbff 48%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e8f6ff 0%,#f4fbff 48%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f6ff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.binary-representation {
+    position: absolute;
+    top: 12.8em;
+    left: 2.6em;
+    width: 38.5em;
+    height: 6.5em;
+    border: 1px solid white;
+    box-shadow: 0 0 0 2px #cccccc;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.4em;
+}
+
+    .binary-representation > .digits {
+        font-size: 1.25em;
+        line-height: 0.5em;
+        position: relative;
+        top: -0.3em;
+        left: -0.7em;
+    }
+
+        .binary-representation > .digits td {
+            padding: 0.8em;
+        }
+
+#calculation-result {
+    font-family: Consolas;
+    font-size: 3em;
+    position: relative;
+    top: 0.4em;
+    left: 8.8em;
+}
+
+.binary-numbers-bottom {
+    color: #808080;
+    font-size: 1em;
+    position: absolute;
+    top: 4.2em;
+}
+
+.binary-numbers-top {
+    color: #808080;
+    font-size: 1em;
+    position: absolute;
+    top: 1.88em;
+}
+
+#first-binary {
+    position: absolute;
+    left: 30.6em;
+}
+
+#second-binary {
+    position: absolute;
+    left: 16.95em;
+}
+
+#third-binary {
+    position: absolute;
+    left: 1em;
+}
+
+#forth-binary {
+    position: absolute;
+    left: 30.08em;
+}
+
+#fifth-binary {
+    position: absolute;
+    left: 16.96em;
+}
+
+#sixth-binary {
+    position: absolute;
+    left: 1em;
+}
+
+.numeral-systems, .under-numeral-systems {
+    list-style-type: none;
+}
+
+    .numeral-systems li, .under-numeral-systems li {
+        position: relative;
+        left: -3.9em;
+        top: -0.7em;
+        width: 8em;
+    }
+
+.numeral-systems-wraper, .under-numeral-systems-wraper {
+    left: 2.6em;
+    width: 72px;
+    height: 92px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.3em;
+}
+
+.numeral-systems-wraper {
+    position: absolute;
+    top: 20.33em;
+}
+
+.under-numeral-systems-wraper {
+    position: absolute;
+    top: 30.4em;
+}
+
+.value {
+    font-size: 1.45em;
+}
+
+/*.touch-pad-division{
+    position:absolute;
+    top:20em;
+    left:10em;
+}
+
+.touch-pad{
+        border-spacing:4px;
+}
+
+.touch-pad tr td:hover{
+        background: #fefcea; /* Old browsers */
+/*background: -moz-linear-gradient(top,  #fefcea 1%, #fcf8d9 1%, #fcef7e 11%, #efdb58 48%, #f9ee95 91%, #fcf8d4 99%); /* FF3.6+ 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fefcea), color-stop(1%,#fcf8d9), color-stop(11%,#fcef7e), color-stop(48%,#efdb58), color-stop(91%,#f9ee95), color-stop(99%,#fcf8d4));  Chrome,Safari4+ 
+background: -webkit-linear-gradient(top,  #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);  Chrome10+,Safari5.1+ 
+background: -o-linear-gradient(top,  #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);  Opera 11.10+ 
+background: -ms-linear-gradient(top,  #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);  IE10+ 
+background: linear-gradient(to bottom,  #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);  W3C 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#fcf8d4',GradientType=0 );  IE6-9 
+
+}
+
+.touch-pad tr td{
+    font-family:'Times New Roman';
+    border:1px solid black;
+    border-radius:0.18em;
+    text-align:center;
+    font-size: 2em;
+    width:1.45em;
+}*/
+
+
+button:hover {
+    background: #fefcea;
+    background: -moz-linear-gradient(top, #fefcea 1%, #fcf8d9 1%, #fcef7e 11%, #efdb58 48%, #f9ee95 91%, #fcf8d4 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fefcea), color-stop(1%,#fcf8d9), color-stop(11%,#fcef7e), color-stop(48%,#efdb58), color-stop(91%,#f9ee95), color-stop(99%,#fcf8d4));
+    background: -webkit-linear-gradient(top, #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);
+    background: -o-linear-gradient(top, #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);
+    background: -ms-linear-gradient(top, #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);
+    background: linear-gradient(to bottom, #fefcea 1%,#fcf8d9 1%,#fcef7e 11%,#efdb58 48%,#f9ee95 91%,#fcf8d4 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#fcf8d4',GradientType=0 );
+}
+
+
+.touch-pad-division {
+    position: absolute;
+    top: 0em;
+    width: 34em;
+}
+
+.calc-button {
+    position: relative;
+    top: 15.1em;
+    left: 7.7em;
+    float: left;
+    width: 2.64em;
+    height: 2.2em;
+    margin: 2px;
+    text-align: center;
+}
+
+.breaked-buttons {
+    position: relative;
+    top: -3.33em;
+}
+
+#mod, #ror {
+    position: relative;
+    left: -0.3em;
+}
+
+#equal {
+    height: 4.7em;
+}
+
+#zero {
+    width: 5.5em;
+}

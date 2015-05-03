@@ -1,0 +1,118 @@
+﻿body {
+    font-family:'Times New Roman';
+    font-size:18px;
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    position:relative;
+    left: 20px;
+    top: 10px;
+    border:hidden;
+    background-color:#eeeeee;
+    width: 455px;
+    height: 585px;
+    border-radius: 7px;
+}
+
+h1{
+    position: absolute;
+    left: 13px;
+    display:inline-block;
+    font-weight:normal;
+    font-size: 1em;
+    font-family: Verdana;
+    margin-bottom:0px;
+}
+
+.product{
+    position:relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    top:75px;
+    margin-top: 20px;
+    margin-bottom: 46px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    width: 405px;
+}
+
+p{
+    margin-bottom:20px;
+    margin-right:10px;
+    font-size:15px;
+}
+
+.product-picture{
+    float:left;
+    width:40%;
+    height:40%;
+}
+
+.description:after{
+    display:block;
+    height:0;
+    clear:both;
+    content:"";
+}
+
+.large-button {
+    position:relative;
+    left:-60px;
+    top:-51px;
+    font-size:6em;
+    display: inline-block;
+    vertical-align:central;
+    border: none;
+    color: #ffffff;
+    background-image: url(../Pictures/large-button.png);
+    background-size: 90% 90%;
+    background-repeat:no-repeat;
+    text-decoration:none;
+    width:98px;
+    height:35px;
+    float:right;
+    margin:10px;
+}
+
+.large-button-text{
+    position:relative;
+    top:-78px;
+    left:28px;
+    font-size:16px;
+}
+
+.small-button {
+    position:relative;
+    left:125px;
+    top:-51px;
+    font-size:6em;
+    display: inline-block;
+    vertical-align:central;
+    border: none;
+    color: #ffffff;
+    background-image: url(../Pictures/large-button.png);
+    background-size: 90% 90%;
+    background-repeat:no-repeat;
+    text-decoration:none;
+    width:78px;
+    height:35px;
+    float:right;
+    margin:10px;
+}
+
+.small-button-text{
+    position:relative;
+    top:-78px;
+    left:23px;
+    font-size:16px;
+}
+
+.small-button:after{
+    display:block;
+    height:0;
+    clear:both;
+    content:"";
+}

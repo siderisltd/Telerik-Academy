@@ -1,0 +1,130 @@
+﻿body{
+    margin:0px;
+    padding:0px;
+}
+
+.table {
+    position:relative;
+    left:10px;
+    display: table;
+    width: 854px;
+    height: 450px;
+    border: 2px solid black;
+    border-top: hidden;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.hr {
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+    width: 814px;
+    position: relative;
+    top: 45px;
+    left: 29px;
+}
+
+.fieldset{
+    width:250px;
+    height:170px;
+}
+
+.nested-table {
+    display: table;
+    width: 600px;
+    margin-top: 25px;
+    margin-left:6px;
+    border: 2px solid black;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    position: relative;
+    left: 10px;
+    display: table-cell;
+    border-collapse: collapse;
+    width:100px;
+    height:200px;
+}
+
+.caption {
+    display: table-caption;
+    caption-side: top;
+    border: 2px solid black;
+    text-align: center;
+    border-bottom: hidden;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+a {
+    color: #00aaef;
+    font-size: 25px;
+}
+
+.product-info.first:before{
+    background-image: url(../Images/product.jpg);
+        z-index: 12;
+        margin-top: 6.5px;
+        background-repeat: no-repeat;
+        background-size: 135px 90px;
+        width: 135px;
+        height: 90px;
+        float: left;
+        margin-right: 0px;
+        margin-bottom:0px;
+        margin-top:0px;
+        position:relative;
+        top:-20px;
+        content: "";
+}
+
+.product-info{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.product-info.first{
+    margin-top:40px;
+}
+
+.product-info.last:before{
+    display:block;
+    clear:both;
+    height:0;
+    content:"";
+}
+
+.product-info.last.multiple{
+     margin-right:46px;
+}
+
+.product-info.multiple{
+    display:inline;
+    position:relative;
+    top:-25px;
+}
+
+legend{
+    font-weight:bold;
+}
+
+.sliders{
+    width:150px;
+    position:absolute;
+    left:680px;
+    top:80px;
+}
+
+.sliders input[type=range]{
+    margin-top:0px;
+    margin-bottom:30px;
+}
+
+.sliders p{
+    font-weight:bold;
+}

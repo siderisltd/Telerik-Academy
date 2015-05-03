@@ -1,0 +1,97 @@
+body {
+            font-size: 15px;
+            font-family: 'Times New Roman','Lucida Sans',sans-serif,serif;
+        }
+
+        #table-1-header {
+            background: #7bff00; /* Old browsers */
+            background: -moz-linear-gradient(-45deg, #7bff00 0%, #7bff00 25%, #21ef13 55%, #1edb11 73%, #0fc41b 93%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7bff00), color-stop(25%,#7bff00), color-stop(55%,#21ef13), color-stop(73%,#1edb11), color-stop(93%,#0fc41b)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(-45deg, #7bff00 0%,#7bff00 25%,#21ef13 55%,#1edb11 73%,#0fc41b 93%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(-45deg, #7bff00 0%,#7bff00 25%,#21ef13 55%,#1edb11 73%,#0fc41b 93%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(-45deg, #7bff00 0%,#7bff00 25%,#21ef13 55%,#1edb11 73%,#0fc41b 93%); /* IE10+ */
+            background: linear-gradient(135deg, #7bff00 0%,#7bff00 25%,#21ef13 55%,#1edb11 73%,#0fc41b 93%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bff00', endColorstr='#0fc41b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            border-style: outset;
+            color: white;
+            border: none;
+        }
+
+            #table-1-header tr td {
+                padding-left: 0.7em;
+            }
+
+        .table-1 tr:nth-child(2n) {
+            background-color: rgba(190,190,190,0.2);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table td, table th {
+                border: 0;
+            }
+
+            table tr:first-child th {
+                border-top: 1px solid grey;
+            }
+
+            table tr:last-child td {
+                border-bottom: 1px solid grey;
+            }
+
+            table td {
+                border: 1px solid grey;
+            }
+
+            table tr td:first-child,
+            table tr th:first-child {
+                border-left: 0;
+            }
+
+            table tr td:last-child,
+            table tr th:last-child {
+                border-right: 0;
+            }
+
+        .countries-uk:before {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            position:relative;
+            top:1.2em;
+            margin-right: 0.7em;
+            content: "";
+            background: url("../Pictures/uk-flag.jpg") no-repeat 0 0;
+            background-size: 100%;
+        }
+
+        .countries-de:before {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            position: relative;
+            top: 1.2em;
+            margin-right: 0.7em;
+            content: "";
+            background: url("../Pictures/de-flag.jpg") no-repeat 0 0;
+            background-size: 100%;
+        }
+
+        .countries-sp:before {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            position: relative;
+            top: 1.2em;
+            margin-right: 0.7em;
+            content: "";
+            background: url("../Pictures/sp-flag.jpg") no-repeat 0 0;
+            background-size: 100%;
+        }
+
+        .countries-uk, .countries-sp, .countries-de {
+            position: relative;
+            top: -0.6em;
+        }

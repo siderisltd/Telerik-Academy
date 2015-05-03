@@ -1,0 +1,76 @@
+ body {
+            font-size: 10px;
+        }
+
+        #root {
+            position: absolute;
+            top: 1em;
+        }
+
+        #id {
+            font-size: 1.5em;
+            color: grey;
+            position: absolute;
+            top: 1em;
+            left: 1.44em;
+        }
+
+        #notAnswered {
+            color: orange;
+        }
+
+        #name {
+            position: relative;
+            top: 0.7em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding-left: 1em;
+            text-indent: -.7em;
+        }
+
+            li:before {
+                content: ".";
+                font-size: 3em;
+                font-weight: bold;
+                position: relative;
+                top: -2px;
+                color: #00FF00;
+            }
+
+        .table {
+            font-size: 1.5em;
+            border: 1px solid black;
+            background-color: #171717;
+            padding: 2em;
+        }
+
+            .table td:nth-of-type(1) {
+                color: #acacac;
+            }
+
+            .table tr:nth-of-type(1) {
+                color: #f6ea8a;
+            }
+
+            .table tr:nth-of-type(2) {
+                color: red;
+            }
+
+            .table tr:nth-of-type(3) {
+                color: #f6ea8a;
+            }
+
+            .table tr:nth-of-type(4), .table tr:nth-of-type(5) {
+                color: grey;
+            }
+
+            .table tr:nth-of-type(6) {
+                color: #f6ea8a;
+            }

@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Styles/calculator-stylesheet.css" />
+</head>
+<body>
+    <div class="default-top-bar"><span id="program-name">Calculator</span></div>
+    <div class="outline-wrapper"></div>
+    <div class="pad-wrapper"></div>
+    <div class="toolbar-box">
+        <ul>
+            <li class="toolbar"><a href="#">View</a></li>
+            <li class="toolbar"><a href="#">Edit</a></li>
+            <li class="toolbar"><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <div class="calculations-box"><span id="calculation-result">8854455</span></div>
+    <div class="binary-representation">
+        <div class="digits">
+            <table>
+                <tr><td>0000</td><td>0000</td><td>0000</td><td>0000</td><td>0000</td><td>0000</td><td>0000</td><td>0000</td></tr>
+                <tr><td>0000</td><td>0000</td><td>1000</td><td>0111</td><td>0001</td><td>1011</td><td>1011</td><td>0111</td></tr>
+            </table>
+            <div class="binary-numbers-bottom">
+                <span id="first-binary">0</span>
+                <span id="second-binary">15</span>
+                <span id="third-binary">31</span>
+            </div>
+            <div class="binary-numbers-top">
+                <span id="forth-binary">32</span>
+                <span id="fifth-binary">47</span>
+                <span id="sixth-binary">63</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="numeral-systems-wraper">
+        <ul class="numeral-systems">
+            <li><label><input type="radio" name="numeral-systems" /><span class="value">Hex</span></label></li>
+            <li><label><input type="radio" name="numeral-systems" checked="checked" /><span class="value">Dec</span></label></li>
+            <li><label><input type="radio" name="numeral-systems" /><span class="value">Oct</span></label></li>
+            <li><label><input type="radio" name="numeral-systems" /><span class="value">Bin</span></label></li>
+        </ul>
+    </div>
+    <div class="under-numeral-systems-wraper">
+        <ul class="under-numeral-systems">
+            <li><label><input type="radio" name="under-numeral-systems" checked="checked" /><span class="value">Qword</span></label></li>
+            <li><label><input type="radio" name="under-numeral-systems" /><span class="value">Dword</span></label></li>
+            <li><label><input type="radio" name="under-numeral-systems" /><span class="value">Word</span></label></li>
+            <li><label><input type="radio" name="under-numeral-systems" /><span class="value">Byte</span></label></li>
+        </ul>
+    </div>
+
+    <div class="touch-pad-division">
+
+                <button class="calc-button like-pressed"></button>
+                             
+                <button class="calc-button side-func" ><span id="mod">Mod</span></button>
+                <button class="calc-button like-pressed">A</button>
+                <button class="calc-button top-modes">MC</button>
+                <button class="calc-button top-modes">MR</button>
+                <button class="calc-button top-modes">MS</button>
+                <button class="calc-button top-modes">M+</button>
+                <button class="calc-button top-modes">M-</button>
+                              
+                <button class="calc-button side-func">(</button>
+                <button class="calc-button side-func">)</button>
+                <button class="calc-button like-pressed">B</button>
+                <button class="calc-button digit-wrapers">←</button>
+                <button class="calc-button digit-wrapers">CE</button>
+                <button class="calc-button digit-wrapers">C</button>
+                <button class="calc-button digit-wrapers">±</button>
+                <button class="calc-button right-sidebar">√</button>
+                   
+                <button class="calc-button side-func" >Rol</button>
+                <button class="calc-button side-func" ><span id="ror">RoR</span></button>
+                <button class="calc-button like-pressed">C</button>
+                <button class="calc-button digits">7</button>
+                <button class="calc-button digits">8</button>
+                <button class="calc-button digits">9</button>
+                <button class="calc-button digit-wrapers">/</button>
+                <button class="calc-button right-sidebar">%</button>
+                             
+                <button class="calc-button side-func">Or</button>
+                <button class="calc-button side-func">Xor</button>
+                <button class="calc-button like-pressed">D</button>
+                <button class="calc-button digits">4</button>
+                <button class="calc-button digits">5</button>
+                <button class="calc-button digits">6</button>
+                <button class="calc-button digit-wrapers">*</button>
+                <button class="calc-button right-sidebar">1/x</button>
+                             
+                <button class="calc-button side-func">Lsh</button>
+                <button class="calc-button side-func">Rsh</button>
+                <button class="calc-button like-pressed">E</button>
+                <button class="calc-button digits">1</button>
+                <button class="calc-button digits">2</button>
+                <button class="calc-button digits">3</button>
+                <button class="calc-button digit-wrapers">-</button>
+
+                <button class="calc-button right-sidebar" id="equal">=</button>
+                                
+        <div class="breaked-buttons">
+            <button class="calc-button side-func">Not</button>
+            <button class="calc-button side-func">And</button>
+            <button class="calc-button like-pressed">F</button>
+            <button class="calc-button digits" id="zero">0</button>
+            <button class="calc-button side-func" id="dot">.</button>
+            <button class="calc-button digit-wrapers">+</button>
+        </div>
+    </div>
+</body>
+</html>
