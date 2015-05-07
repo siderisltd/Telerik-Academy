@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{74FECAFB-0A3F-44BE-83CB-9A17E2F2BDC6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Blokus</RootNamespace>
+    <AssemblyName>Blokus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="03.ConsoleFont.cs" />
+    <Compile Include="02.FigureConstructor.cs" />
+    <Compile Include="07.CheckForMoves.cs" />
+    <Compile Include="Figure14.cs" />
+    <Compile Include="Figure16.cs" />
+    <Compile Include="Figure2.cs" />
+    <Compile Include="Figure21.cs" />
+    <Compile Include="Figure5.cs" />
+    <Compile Include="Figure6.cs" />
+    <Compile Include="Figure20.cs" />
+    <Compile Include="Figure7.cs" />
+    <Compile Include="Figure17.cs" />
+    <Compile Include="Figure12.cs" />
+    <Compile Include="Figure11.cs" />
+    <Compile Include="Figure10.cs" />
+    <Compile Include="Figure9.cs" />
+    <Compile Include="Figure4.cs" />
+    <Compile Include="Figure3.cs" />
+    <Compile Include="Figure1.cs" />
+    <Compile Include="Figure8.cs" />
+    <Compile Include="Figure19.cs" />
+    <Compile Include="Figure18.cs" />
+    <Compile Include="01.MainClass.cs" />
+    <Compile Include="05.Field.cs" />
+    <Compile Include="06.Player.cs" />
+    <Compile Include="08.MoveFigure.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="04.SetWindowPosition.cs" />
+    <Compile Include="Figure15.cs" />
+    <Compile Include="Figure13.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

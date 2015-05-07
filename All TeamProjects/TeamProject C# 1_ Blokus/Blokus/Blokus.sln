@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Field", "Field\Field.csproj", "{644E1F40-83E1-4CF6-90D7-3737DF7CC31E}"
+=======
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blokus", "Blokus\Blokus.csproj", "{4F573085-11BC-4782-83AF-39EB7BE783A4}"
+>>>>>>> da8860ca3f09e445224a65e22a52c929cdc1a951
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
+		{644E1F40-83E1-4CF6-90D7-3737DF7CC31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644E1F40-83E1-4CF6-90D7-3737DF7CC31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644E1F40-83E1-4CF6-90D7-3737DF7CC31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644E1F40-83E1-4CF6-90D7-3737DF7CC31E}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{4F573085-11BC-4782-83AF-39EB7BE783A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F573085-11BC-4782-83AF-39EB7BE783A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F573085-11BC-4782-83AF-39EB7BE783A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F573085-11BC-4782-83AF-39EB7BE783A4}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> da8860ca3f09e445224a65e22a52c929cdc1a951
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
