@@ -16,7 +16,7 @@ class Programa
         CultureInfo currentCulture = CultureInfo.InvariantCulture;
         DateTime first = DateTime.ParseExact("01:00 PM", "hh:mm tt", currentCulture);
         DateTime second = DateTime.ParseExact("03:00 AM", "hh:mm tt", currentCulture);
-            string time = "02:59 AM";
+            string time = "01:00 PM";
             DateTime userTime = DateTime.ParseExact(time, "hh:mm tt", currentCulture);
             if (userTime.TimeOfDay > first.TimeOfDay || userTime.TimeOfDay < second.TimeOfDay)
             {

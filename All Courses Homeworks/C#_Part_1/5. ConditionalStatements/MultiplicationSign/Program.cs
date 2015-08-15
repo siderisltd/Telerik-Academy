@@ -20,9 +20,9 @@ class Program
         {
             Console.WriteLine("+");
         }
-        if (a + b + c > 0)
+        if (a + b + c < 0)
         {
-            Console.WriteLine("+");
+            Console.WriteLine("-");
         }
     }
 }

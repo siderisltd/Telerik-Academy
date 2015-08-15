@@ -11,7 +11,7 @@ class ComparingFloats
 {
     static void Main()
     {
-        Console.WriteLine(nearlyEqual(5.3, 6.1));
+        Console.WriteLine(nearlyEqual(5.32342432, 6.1));
         
     }
 

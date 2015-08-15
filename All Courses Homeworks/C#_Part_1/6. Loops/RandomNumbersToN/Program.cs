@@ -42,6 +42,7 @@ class Program
                 repeat = false;
 
             }
+
         }
         foreach (var item in dynamicArray)
         {

@@ -11,7 +11,7 @@ class BiggestNumber
         double a = -0.1;
         double b = -0.5;
         double c = -1.1;
-        FindBiggest(a, b, c);
+        Console.WriteLine(FindBiggest(a, b, c));
     }
     public static double FindBiggest(double a, double b, double c)
     {
@@ -33,7 +33,6 @@ class BiggestNumber
             }
             counter++;
         }
-        Console.WriteLine(biggest);
         return biggest;
     }
 }

@@ -40,7 +40,7 @@ class Program
         for (int i = next; i < maxLength; i++)
         {
             Console.WriteLine("Line - {0} - They are no equal from now on and this is the difference in the characters because one of"+
-            "the arrays is larger tham the other",i+1);
+            "the arrays is larger than the other",i+1);
         }
     }
 }

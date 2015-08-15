@@ -12,20 +12,16 @@ class Program
 {
     static void Main()
     {
-        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-        string[] officialHolidays = { "01/1", "02/3", "03/3", "10/4", "11/4", 
-                                        "12/4", "13/4", "01/5", "06/6", "21/9", "22/9", 
-                                            "24/12", "25/12", "26/12", "31/12" };
-        DateTime today = DateTime.Now;
+      
         Console.Write("Timespan Date  dd/M : ");
         string date = Console.ReadLine();
-        DateTime givenDate = DateTime.ParseExact(date, "dd/M", CultureInfo.InvariantCulture);
-        int interval = givenDate.DayOfYear - today.DayOfYear;
+        DateTime givenDate = DateTime.ParseExact(date, "dd.MM.yyyy", CultureInfo.InvariantCulture);
 
-        Console.WriteLine("All days are : {0}", interval);
-        Console.WriteLine("Business Days are : {0}", BusinessDays(today, givenDate, officialHolidays));
+        Console.WriteLine("day :"+ givenDate.Day + "month : " + givenDate.Month + "y :" + givenDate.Year);
 
-        // TODO ! - string[] holidays
+
+
+       
     }
     public static int BusinessDays(DateTime today, DateTime givenDate, string[] holidays)
     {

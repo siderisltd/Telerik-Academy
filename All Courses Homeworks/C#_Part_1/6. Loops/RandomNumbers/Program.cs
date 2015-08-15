@@ -13,11 +13,12 @@ class Program
         int min = int.Parse(Console.ReadLine());
         int max = int.Parse(Console.ReadLine());
         List<int> dynamicArray = new List<int>();
-
+      
         if (min != max)
         {
             for (int i = 0; i < n; i++)
             {
+ 
                 Random randomnumber = new Random(i * 4);
                 dynamicArray.Add(randomnumber.Next(min, max));
             }

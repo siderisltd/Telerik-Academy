@@ -8,6 +8,11 @@
     {
         private static void Main()
         {
+
+
+            string result = Math.Pow(10, 308).ToString();
+
+
             GenericMatrix<int> firstMatrix = new GenericMatrix<int>(3, 2);
             firstMatrix[0, 0] = 1;
             firstMatrix[0, 1] = 2;

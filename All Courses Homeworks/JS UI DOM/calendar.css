@@ -1,0 +1,73 @@
+div#calendar-ul-list {
+    margin: 0;
+    position:relative;
+    display: table;
+    width: 706px;
+}
+
+button.calendar-days {
+    display: inline;
+    font-size:2.3em;
+}
+
+#calendar-table-row {
+    display: block;
+    opacity: 0;
+}
+
+button.sunday, button.monday, button.tuesday, button.wednesday, button.thursday, button.friday, button.saturday {
+    vertical-align: middle;
+    width: 4.2em;
+    height: 4em;
+    text-align: center;
+    display: inline;
+    font-size:1.5em;
+}
+
+li.week-day-names{
+    display: inline;
+    font-size:1.4em;
+    margin-left: 17px;
+    margin-right: 15px;
+}
+
+li.week-day-names.sunday{
+    position: relative;
+    left: 3px;
+}
+
+li.week-day-names.monday{
+    position: relative;
+    left: 6px;
+}
+
+li.week-day-names.tuesday{
+    position: relative;
+    left: 8px;
+}
+
+li.week-day-names.wednesday{
+    position: relative;
+    right: 8px;
+}
+
+li.week-day-names.thursday{
+    position: relative;
+    right: 25px;
+}
+
+li.week-day-names.friday{
+    position: relative;
+    right: 20px;
+}
+
+li.week-day-names.saturday {
+    position: relative;
+    right: 17px;
+}
+
+
+
+button.calendar-days:hover {
+    background-color: greenyellow;
+}

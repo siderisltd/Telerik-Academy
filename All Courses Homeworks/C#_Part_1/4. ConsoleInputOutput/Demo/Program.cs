@@ -23,11 +23,5 @@ class Program
         //Console.WriteLine("Key was :" + key.Key);
         //Console.WriteLine("Modifiers :" + key.Modifiers);
         //Console.WriteLine("KeyChar :" + key.KeyChar);
-
-        
-        
-
-
-
     }
 }

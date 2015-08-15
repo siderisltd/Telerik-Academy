@@ -11,8 +11,8 @@ class InCircleOursideRectangle
     
     static void Main()
     {
-        double pointX = 2;
-        double pointY = 1.5;
+        double pointX = 2.5;
+        double pointY = 2;
 
         double rectangleTop = 1;
         double rectangleLeft = -1;

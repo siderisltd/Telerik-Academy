@@ -28,6 +28,6 @@ class QuadraticEquasion
         double secondRoot = ((-b + Math.Sqrt(discriminant)) / (2 * a));
 
         Console.Write("X1=" + firstRoot);
-        Console.WriteLine("; X2=" + secondRoot);
+        Console.WriteLine("X2=" + secondRoot);
     }
 }

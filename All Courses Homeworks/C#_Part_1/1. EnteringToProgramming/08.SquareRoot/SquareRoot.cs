@@ -8,12 +8,9 @@ class Program
 {
     static void Main()
     {
-        //Defining number
-        int number = 12345;
-        //Defining sqrt in decimal variable for most correct result
-        decimal sqrt = (decimal) Math.Sqrt(number);
-
-        Console.WriteLine(sqrt);
-
+        for (int i = 0; i < 10000; i++)
+        {
+            Console.WriteLine(i);
+        }
     }
 }

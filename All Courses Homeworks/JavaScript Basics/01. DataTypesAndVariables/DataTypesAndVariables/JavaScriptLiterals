@@ -1,0 +1,29 @@
+/**
+ * Created by Alex on 5/21/2015.
+ */
+var integer = 1;
+var array = [1,2,3,4,5];
+var arr  = [];
+var nullValue = null;
+var undefinedValue = undefined;
+arr[0] = 5;
+arr["Gosho"] = "Gosho";
+console.log(arr["Gosho"]);
+var emptyArray = [];
+var boolean = true;
+
+function myFunc(a, b){
+    return a+b;
+}
+
+var student = { firstname: "Gosho", lastName: "Ivanov"};
+
+for(var index in arr)
+{
+    console.log("Arr at index : " + index + " is : " + arr[index]);
+}
+
+console.log(myFunc(5,20));
+console.log(undefinedValue);
+console.log(nullValue);
+console.log(student.firstname + " " + student.lastName);

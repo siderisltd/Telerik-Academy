@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>The first p element in the document.</div>
+<p>Another p element.</p>
+
+<div>Click the button to find out how many p elements there are in this document.</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<div id="demo">I am also a div element.</div>
+
+<script>
+    function myFunction() {
+        var nodelist = document.getElementsByTagName("div").length;
+        document.getElementById("demo").innerHTML = nodelist;
+    }
+</script>
+
+</body>
+</html>

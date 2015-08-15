@@ -1,0 +1,133 @@
+﻿html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, em, img, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, figcaption, footer, header, hgroup, 
+menu, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+ul{
+list-style:none
+}
+
+ul li{
+    position:relative;
+    left:435px;
+    display:inline-block;
+    margin-right:15px;
+}
+
+ul li a{
+      font-weight:bold;
+      text-transform:capitalize;
+}
+
+html, body {
+    font-family: 'Segoe UI', 'Segoe UI Web', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0 auto;
+    width: 1000px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#header{
+    font-size:13px;
+}
+
+#main > img{
+    position:relative;
+    left:375px;
+}
+
+#logo{
+    background-image:url("images/logo.png");
+    background-repeat:no-repeat;
+    height:35px;
+    margin-left:10px;
+    background-color:#077CC6;
+}
+
+#header li a{
+    text-decoration:none;
+    color: #E0E0E0;
+    
+}
+
+#search{
+    float:right;
+}
+
+#header li a, #search {
+    position:relative;
+    top:-25px;
+}
+
+#search{
+    border: 1px solid #A9A9A9;
+   position:relative;
+   top:-30px;
+   right:5px;
+}
+
+#search input{
+    height:23px;
+    width:198px;
+
+}
+
+#main{
+    font-size:16px;
+}
+
+#main h1{
+    font-size:53px;
+    font-weight:normal;
+    float:left;
+    margin-top:0px;
+    padding-left:30px;
+}
+
+#footer{
+    font-size:11px;
+    text-align:center;
+    margin-top:15px;
+    background-color:#077CC6;
+    width:1000px;
+    height:60px;
+}
+
+#footer div{
+        position:relative;
+        top:20px;
+        color:#E0D9D9;
+}
+
+#footer div a{
+        color:#E0D9D9;
+}
+
+
+/*tuk slagam chervenite laina v texta*/
+
+#main p a{
+    color: #DC143C;
+}
+
+p{
+    text-align:justify;
+}
+
+code{
+    border: 1px solid #000000;
+}

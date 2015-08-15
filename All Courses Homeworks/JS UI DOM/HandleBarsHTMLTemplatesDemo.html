@@ -1,0 +1,100 @@
+<!--Ako iskame input chist html slagame ne 2x {} ami 3 no moje nqkoi da ni podpuhne script-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="wrapper"></div>
+
+    <!--slaga se v script za da ne go renderira browsera-->
+<script id="article-template" type="text/x-handlebars-template">
+    <div class="id">
+         <p class="pesho" data-id="{{id}}">Name: {{{name}}}</p>
+         <p>Visitors {{visitors}}</p>
+        <p>Tags:
+            <ul>
+        <!--za vseki tag mi dai tozi html-->
+               {{#tags}}
+                    <li class="tags">{{name}}</li>
+               {{/tags}}
+            </ul>
+        </p>
+        {{#if author}}
+        <p>Author : {{author}}</p>
+        {{/if}}
+        {{#unless author}}
+        <p>Nqma Author</p>
+        {{/unless}}
+
+        <p>Each helper has [indexer] and [this]
+        <ul>Each tags
+            {{#each content}}
+                <li class="each-tags">Index : {{@index}} + Name : {{name}} + This {{this}}</li>
+            {{/each}}
+        </ul>
+        </p>
+    </div>
+    <!--<p>{{redactor.name}}</p>-->
+    <!--<p>{{redactor.age}}</p>-->
+    <!--vmesto tova za nestnati obekti mojem da kajem vmesto redactor.name.drun drun.drun drun slednoto :-->
+
+    <!--TOVA NE RABOTI PO NEZNAINI PRICHINI !!!-->
+    <!--{{#with redactor}}-->
+    <!--<p>name</p>-->
+    <!--<p>age</p>-->
+    <!--{{/with}}-->
+
+    <!--TAKA RABOTI NO E TUPO AKO SAMO TAKA BACHKA -->
+    {{#with redactor}}
+      Redactor: {{name}} age {{age}}
+    {{/with}}
+    <br />
+    <br />
+    <br />
+    {{#myredactor redactor}}
+    {{/myredactor}}
+</script>
+
+
+<script src="handlebars-v3.0.3.js" ></script>
+
+<script>
+//    tova e komentar da ne ni pishti JS Lint. Kazvame mu che znaem che imame takiva obekti inache vika che
+//    ne sme gi definirali
+
+    /* globals Handlebars, document */
+
+//    Ako imame parcheta kod koito sa ednakvi v mnogo templates moje da se iznese i v drug handlebars template i da
+//    se vzima s document.getElementById()
+    Handlebars.registerHelper('myredactor', function(redactor){
+       var html = '<ul>' +
+                       '<li>' + redactor.name + '</li>' +
+                       '<li>' + redactor.age + '</li>' +
+                       '</ul>';
+        return new Handlebars.SafeString(html);
+    });
+
+    var html = document.getElementById('article-template').innerHTML;
+    var articleTemplate = Handlebars.compile(html);
+    var article = {
+        id:5,
+        name: '<h1>Sideris rules the programming</h1>',
+        visitors: 122231,
+        tags: [{name: 'season 2015'}, {name: 'summer'}, {name: 'Gosho'}],
+//      author: 'Bay pesho',
+        content: [{name: 'Sasho'}, {name: 'Petq'}, {name: 'Rali'}],
+        redactor:{
+            name: 'Bay Ivan',
+            age:20
+        }
+    };
+
+    var articleResult = articleTemplate(article);
+    document.getElementById('wrapper').innerHTML = articleResult;
+</script>
+
+</body>
+</html>
